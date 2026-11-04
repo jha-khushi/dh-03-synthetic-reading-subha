@@ -1,0 +1,738 @@
+{
+  "model": "qwen2.5:7b",
+  "stages": {
+    "Stage_I": {
+      "sentences": 40,
+      "raw": [
+        {
+          "voice_and_silence": [
+            "dumb",
+            "silent",
+            "speak"
+          ],
+          "nature_and_nonhuman_kinship": [],
+          "social_and_patriarchal_structure": [
+            "father's house",
+            "marriage",
+            "cost and difficulty",
+            "future",
+            "anxiety",
+            "parents' minds",
+            "mother looked upon her as a deformity in herself"
+          ],
+          "affect_and_being": [
+            "curse",
+            "pain",
+            "withdrawn",
+            "try to live apart"
+          ]
+        },
+        {
+          "voice_and_silence": [
+            "speech",
+            "language",
+            "muteness",
+            "silence",
+            "sound",
+            "eyes",
+            "gaze",
+            "lips",
+            "trembling",
+            "thought"
+          ],
+          "nature_and_nonhuman_kinship": [
+            "river",
+            "landscape",
+            "sky",
+            "moon"
+          ],
+          "social_and_patriarchal_structure": [
+            "mother",
+            "father",
+            "daughters",
+            "dowry",
+            "village society",
+            "public opinion"
+          ],
+          "affect_and_being": [
+            "fault",
+            "shame",
+            "aversion",
+            "tremble",
+            "thought",
+            "shadow",
+            "opens or shuts",
+            "hangs steadfast",
+            "swift and restless lightning",
+            "play dawn and sunset"
+          ]
+        },
+        {
+          "voice_and_silence": [
+            "silent",
+            "silence",
+            "speech",
+            "goddess",
+            "spoken"
+          ],
+          "nature_and_nonhuman_kinship": [
+            "river",
+            "stream",
+            "houses",
+            "trees",
+            "water",
+            "deity",
+            "benediction",
+            "swift",
+            "cheerful"
+          ],
+          "social_and_patriarchal_structure": [
+            "hamlet",
+            "village",
+            "wealth",
+            "noticed",
+            "girl",
+            "work",
+            "hut",
+            "stack"
+          ],
+          "affect_and_being": [
+            "silent",
+            "companionless",
+            "stealed",
+            "away",
+            "speech"
+          ]
+        },
+        {
+          "voice_and_silence": [
+            "murmur",
+            "voice",
+            "songs",
+            "crying",
+            "rustle",
+            "trembling",
+            "language",
+            "long lashes",
+            "signs and gestures",
+            "weeping",
+            "sighing"
+          ],
+          "nature_and_nonhuman_kinship": [
+            "brook",
+            "village folk",
+            "boatmen",
+            "birds",
+            "trees",
+            "cicadas",
+            "stars",
+            "cows",
+            "Sarbbashi",
+            "Panguli"
+          ],
+          "social_and_patriarchal_structure": [
+            "dumb girl's language",
+            "speech of the dark eyes",
+            "world about her",
+            "villagers",
+            "ferry-boats",
+            "great busy world",
+            "lonely, awful giant"
+          ],
+          "affect_and_being": [
+            "heart",
+            "signs and gestures",
+            "weeping",
+            "sighing",
+            "understanding",
+            "murmuring",
+            "lovingly",
+            "gentle murmuring"
+          ]
+        }
+      ],
+      "verified": {
+        "voice_and_silence": [
+          "dumb",
+          "silent",
+          "speak",
+          "speech",
+          "language",
+          "eyes",
+          "lips",
+          "trembling",
+          "thought",
+          "goddess",
+          "murmur",
+          "voice",
+          "songs",
+          "crying",
+          "rustle",
+          "long lashes",
+          "signs and gestures",
+          "weeping",
+          "sighing"
+        ],
+        "nature_and_nonhuman_kinship": [
+          "sky",
+          "moon",
+          "river",
+          "stream",
+          "houses",
+          "trees",
+          "water",
+          "deity",
+          "benediction",
+          "swift",
+          "cheerful",
+          "brook",
+          "village folk",
+          "boatmen",
+          "birds",
+          "stars",
+          "cows",
+          "sarbbashi",
+          "panguli"
+        ],
+        "social_and_patriarchal_structure": [
+          "father's house",
+          "cost and difficulty",
+          "future",
+          "anxiety",
+          "parents' minds",
+          "mother looked upon her as a deformity in herself",
+          "mother",
+          "father",
+          "daughters",
+          "hamlet",
+          "village",
+          "wealth",
+          "noticed",
+          "girl",
+          "work",
+          "hut",
+          "stack",
+          "dumb girl's language",
+          "speech of the dark eyes",
+          "world about her",
+          "villagers",
+          "ferry-boats",
+          "great busy world",
+          "lonely, awful giant"
+        ],
+        "affect_and_being": [
+          "curse",
+          "pain",
+          "fault",
+          "shame",
+          "aversion",
+          "tremble",
+          "thought",
+          "shadow",
+          "opens or shuts",
+          "hangs steadfast",
+          "swift and restless lightning",
+          "play dawn and sunset",
+          "silent",
+          "companionless",
+          "away",
+          "speech",
+          "heart",
+          "signs and gestures",
+          "weeping",
+          "sighing",
+          "murmuring",
+          "lovingly",
+          "gentle murmuring"
+        ]
+      },
+      "rejected_not_in_text": [
+        "marriage",
+        "withdrawn",
+        "try to live apart",
+        "muteness",
+        "silence",
+        "sound",
+        "gaze",
+        "river",
+        "landscape",
+        "dowry",
+        "village society",
+        "public opinion",
+        "silence",
+        "spoken",
+        "stealed",
+        "cicadas",
+        "understanding"
+      ]
+    },
+    "Stage_II": {
+      "sentences": 40,
+      "raw": [
+        {
+          "voice_and_silence": [
+            "speech",
+            "language",
+            "mutes",
+            "silence",
+            "sound",
+            "arms",
+            "neck",
+            "cheek",
+            "rub",
+            "hurt",
+            "quiet",
+            "look"
+          ],
+          "nature_and_nonhuman_kinship": [
+            "river",
+            "landscape",
+            "seasons",
+            "sky",
+            "moon",
+            "goats",
+            "kitten",
+            "horn",
+            "lap",
+            "slumber"
+          ],
+          "social_and_patriarchal_structure": [
+            "family",
+            "marriage",
+            "dowry",
+            "caste",
+            "religion",
+            "village",
+            "city",
+            "public opinion",
+            "economic",
+            "ritual logic"
+          ],
+          "affect_and_being": [
+            "anguish",
+            "spirit",
+            "equality",
+            "friendship",
+            "attachment",
+            "sleep",
+            "appreciation",
+            "relations",
+            "idle",
+            "youngest"
+          ]
+        },
+        {
+          "voice_and_silence": [
+            "taciturnity",
+            "silent"
+          ],
+          "nature_and_nonhuman_kinship": [
+            "tamarind"
+          ],
+          "social_and_patriarchal_structure": [],
+          "affect_and_being": []
+        },
+        {
+          "voice_and_silence": [
+            "speech",
+            "language",
+            "muteness",
+            "silence",
+            "sound"
+          ],
+          "nature_and_nonhuman_kinship": [
+            "river",
+            "landscape",
+            "sky",
+            "moon"
+          ],
+          "social_and_patriarchal_structure": [
+            "family roles",
+            "marriage",
+            "dowry",
+            "caste",
+            "religion",
+            "village and city society",
+            "public opinion",
+            "economic or ritual logic"
+          ],
+          "affect_and_being": [
+            "pain",
+            "burden",
+            "curse",
+            "longing",
+            "fear"
+          ]
+        },
+        {
+          "voice_and_silence": [
+            "saw",
+            "questioned",
+            "answer",
+            "opened",
+            "door",
+            "peeped",
+            "strong young life",
+            "joy",
+            "sadness",
+            "heavy",
+            "could not speak"
+          ],
+          "nature_and_nonhuman_kinship": [
+            "full moon",
+            "lonely Subha",
+            "sleeping earth",
+            "Mother",
+            "skirts of this silent troubled Mother",
+            "silent troubled girl"
+          ],
+          "social_and_patriarchal_structure": [
+            "thought of her marriage",
+            "parents",
+            "anxious care",
+            "people blamed them",
+            "even talked of making them outcasts",
+            "Banikantha was well off",
+            "fish-curry twice daily",
+            "enemies"
+          ],
+          "affect_and_being": [
+            "inexpressible consciousness",
+            "central places of the sea",
+            "illimitable loneliness",
+            "passed beyond"
+          ]
+        }
+      ],
+      "verified": {
+        "voice_and_silence": [
+          "speech",
+          "language",
+          "arms",
+          "neck",
+          "cheek",
+          "rub",
+          "hurt",
+          "quiet",
+          "look",
+          "taciturnity",
+          "silent",
+          "saw",
+          "questioned",
+          "answer",
+          "opened",
+          "door",
+          "peeped",
+          "strong young life",
+          "joy",
+          "sadness",
+          "heavy",
+          "could not speak"
+        ],
+        "nature_and_nonhuman_kinship": [
+          "goats",
+          "kitten",
+          "horn",
+          "lap",
+          "slumber",
+          "tamarind",
+          "river",
+          "full moon",
+          "lonely subha",
+          "sleeping earth",
+          "mother",
+          "skirts of this silent troubled mother",
+          "silent troubled girl"
+        ],
+        "social_and_patriarchal_structure": [
+          "thought of her marriage",
+          "parents",
+          "anxious care",
+          "people blamed them",
+          "even talked of making them outcasts",
+          "banikantha was well off",
+          "fish-curry twice daily",
+          "enemies"
+        ],
+        "affect_and_being": [
+          "anguish",
+          "spirit",
+          "equality",
+          "friendship",
+          "attachment",
+          "sleep",
+          "appreciation",
+          "relations",
+          "idle",
+          "youngest",
+          "burden",
+          "inexpressible consciousness",
+          "central places of the sea",
+          "illimitable loneliness",
+          "passed beyond"
+        ]
+      },
+      "rejected_not_in_text": [
+        "mutes",
+        "silence",
+        "sound",
+        "river",
+        "landscape",
+        "seasons",
+        "sky",
+        "moon",
+        "family",
+        "marriage",
+        "dowry",
+        "caste",
+        "religion",
+        "village",
+        "city",
+        "public opinion",
+        "economic",
+        "ritual logic",
+        "muteness",
+        "silence",
+        "sound",
+        "landscape",
+        "sky",
+        "moon",
+        "family roles",
+        "marriage",
+        "dowry",
+        "caste",
+        "religion",
+        "village and city society",
+        "public opinion",
+        "economic or ritual logic",
+        "pain",
+        "curse",
+        "longing",
+        "fear"
+      ]
+    },
+    "Stage_III": {
+      "sentences": 38,
+      "raw": [
+        {
+          "voice_and_silence": [
+            "dumb",
+            "dogged",
+            "vague fear",
+            "wide open eyes",
+            "not a word did they vouchsafe"
+          ],
+          "nature_and_nonhuman_kinship": [
+            "tree",
+            "river",
+            "stricken doe",
+            "hunter's face"
+          ],
+          "social_and_patriarchal_structure": [
+            "women interfered",
+            "father and mother",
+            "bridegroom",
+            "married",
+            "dowry"
+          ],
+          "affect_and_being": [
+            "heart was heavy with tears",
+            "mist-wrapt dawn",
+            "vague fear",
+            "silent agony"
+          ]
+        },
+        {
+          "voice_and_silence": [
+            "weeping",
+            "tears",
+            "gaze",
+            "clasped their necks",
+            "looked into their faces",
+            "flung herself down on her grassy couch",
+            "threw her arms about Earth"
+          ],
+          "nature_and_nonhuman_kinship": [
+            "cow-shed",
+            "her dear river",
+            "Earth, her strong silent mother"
+          ],
+          "social_and_patriarchal_structure": [
+            "Banikantha",
+            "Subha's mother",
+            "Calcutta",
+            "dressed her up with great care",
+            "imprisoned her hair",
+            "hung her about with ornaments",
+            "did her best to kill her natural beauty"
+          ],
+          "affect_and_being": [
+            "burst out weeping",
+            "grew wet with tears",
+            "bids farewell",
+            "clasped their necks",
+            "looked into their faces",
+            "tenth of the moon",
+            "Do not let me leave you, mother"
+          ]
+        },
+        {
+          "voice_and_silence": [
+            "tears",
+            "weeping",
+            "scolded",
+            "called instructions aloud"
+          ],
+          "nature_and_nonhuman_kinship": [],
+          "social_and_patriarchal_structure": [
+            "bridegroom came with a friend to inspect the bride",
+            "parents were dizzy with anxiety and fear",
+            "mother called her instructions aloud",
+            "the great man, after scanning her a long time",
+            "consulted the almanac",
+            "delivered over their dumb girl into another's hands"
+          ],
+          "affect_and_being": [
+            "eyes filled with tears",
+            "fearing they would grow swollen with weeping",
+            "increased her daughter's weeping twofold",
+            "observed: 'Not so bad'",
+            "must have a tender heart",
+            "would presently prove a useful possession",
+            "only increased her value"
+          ]
+        },
+        {
+          "voice_and_silence": [
+            "speech",
+            "language",
+            "muteness",
+            "silence",
+            "sound",
+            "eyes",
+            "gaze",
+            "tears",
+            "weeping"
+          ],
+          "nature_and_nonhuman_kinship": [
+            "river",
+            "landscape",
+            "sky",
+            "moon"
+          ],
+          "social_and_patriarchal_structure": [
+            "caste",
+            "marriage",
+            "dowry",
+            "village",
+            "city society",
+            "public opinion"
+          ],
+          "affect_and_being": [
+            "pain",
+            "burden",
+            "curse",
+            "longing",
+            "fear",
+            "self-discovery",
+            "isolation",
+            "grief"
+          ]
+        }
+      ],
+      "verified": {
+        "voice_and_silence": [
+          "dumb",
+          "dogged",
+          "vague fear",
+          "not a word did they vouchsafe",
+          "weeping",
+          "tears",
+          "gaze",
+          "clasped their necks",
+          "looked into their faces",
+          "flung herself down on her grassy couch",
+          "threw her arms about earth",
+          "scolded",
+          "speech",
+          "language",
+          "sound",
+          "eyes"
+        ],
+        "nature_and_nonhuman_kinship": [
+          "tree",
+          "stricken doe",
+          "hunter's face",
+          "cow-shed",
+          "her dear river",
+          "earth, her strong silent mother"
+        ],
+        "social_and_patriarchal_structure": [
+          "women interfered",
+          "father and mother",
+          "bridegroom",
+          "married",
+          "banikantha",
+          "subha's mother",
+          "calcutta",
+          "dressed her up with great care",
+          "imprisoned her hair",
+          "hung her about with ornaments",
+          "did her best to kill her natural beauty",
+          "bridegroom came with a friend to inspect the bride",
+          "parents were dizzy with anxiety and fear",
+          "mother called her instructions aloud",
+          "the great man, after scanning her a long time",
+          "delivered over their dumb girl into another's hands",
+          "caste",
+          "marriage"
+        ],
+        "affect_and_being": [
+          "heart was heavy with tears",
+          "mist-wrapt dawn",
+          "vague fear",
+          "silent agony",
+          "burst out weeping",
+          "grew wet with tears",
+          "clasped their necks",
+          "looked into their faces",
+          "tenth of the moon",
+          "do not let me leave you, mother",
+          "eyes filled with tears",
+          "fearing they would grow swollen with weeping",
+          "increased her daughter's weeping twofold",
+          "must have a tender heart",
+          "would presently prove a useful possession",
+          "only increased her value"
+        ]
+      },
+      "rejected_not_in_text": [
+        "wide open eyes",
+        "river",
+        "dowry",
+        "bids farewell",
+        "called instructions aloud",
+        "consulted the almanac",
+        "observed: 'not so bad'",
+        "muteness",
+        "silence",
+        "river",
+        "landscape",
+        "sky",
+        "moon",
+        "dowry",
+        "village",
+        "city society",
+        "public opinion",
+        "pain",
+        "burden",
+        "curse",
+        "longing",
+        "fear",
+        "self-discovery",
+        "isolation",
+        "grief"
+      ]
+    }
+  }
+}

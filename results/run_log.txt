@@ -1,0 +1,3 @@
+Stage_I {'voice_and_silence': 19, 'nature_and_nonhuman_kinship': 19, 'social_and_patriarchal_structure': 24, 'affect_and_being': 23} rejected 17
+Stage_II {'voice_and_silence': 22, 'nature_and_nonhuman_kinship': 13, 'social_and_patriarchal_structure': 8, 'affect_and_being': 15} rejected 36
+Stage_III {'voice_and_silence': 16, 'nature_and_nonhuman_kinship': 6, 'social_and_patriarchal_structure': 18, 'affect_and_being': 16} rejected 25
