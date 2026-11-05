@@ -10,6 +10,8 @@ Reads the author-annotated themes in subha_themes.py and produces:
   figures/theme_heatmap.png  - number of expressions per dimension per stage
   figures/theme_trace.png    - how often each dimension's expressions occur,
                                sentence by sentence, across the whole story
+  figures/dimension_share.png - share of expressions per dimension (pie)
+  figures/sentence_barcode.png - every sentence as a heatmap column
 
 Run:  python visualise.py      (needs matplotlib)
 """
@@ -94,3 +96,48 @@ print("Counts (rows = dimensions, columns = stages):")
 for (d, label, _), row in zip(DIMS, counts):
     print(f"  {label:<32} {row.tolist()}")
 print("Saved figures/theme_heatmap.png and figures/theme_trace.png")
+
+
+# ---- Figure 3: share of expressions per dimension ----------------------------
+totals = [sum(len(themes.get(f"{s}_{d}", [])) for s in STAGES) for d, _, _ in DIMS]
+fig, ax = plt.subplots(figsize=(5.5, 5))
+ax.pie(totals, colors=[c for _, _, c in DIMS], startangle=90, counterclock=False,
+       wedgeprops={"edgecolor": "white", "linewidth": 2},
+       autopct=lambda p: f"{p:.0f}%", pctdistance=0.72,
+       textprops={"fontsize": 11, "color": "white", "fontweight": "bold"})
+ax.legend([f"{label} ({n})" for (_, label, _), n in zip(DIMS, totals)],
+          loc="upper center", bbox_to_anchor=(0.5, 0.02), ncol=2, frameon=False)
+ax.set_title(f'"Subha": {sum(totals)} extracted expressions by dimension')
+fig.tight_layout()
+fig.savefig(FIG / "dimension_share.png", dpi=200)
+plt.close(fig)
+
+# ---- Figure 4: sentence-by-sentence "barcode" heatmap ------------------------
+rows = []
+for d, _, _ in DIMS:
+    pat = pattern([p for s in STAGES for p in themes.get(f"{s}_{d}", [])])
+    rows.append([len(pat.findall(s.lower())) if pat else 0 for s in sentences])
+B = np.array(rows, float)
+fig, ax = plt.subplots(figsize=(11, 2.9))
+ax.imshow(B, cmap="RdPu", vmin=0, vmax=B.max(), aspect="auto", interpolation="nearest")
+ax.set_yticks(range(len(DIMS)), [label for _, label, _ in DIMS])
+ax.set_xticks([0, 19, 39, 59, 79, 99, len(sentences) - 1], [1, 20, 40, 60, 80, 100, len(sentences)])
+ax.set_xlabel("Sentence in the story")
+ax.set_yticks(np.arange(-.5, len(DIMS), 1), minor=True)
+ax.grid(which="minor", axis="y", color="white", linewidth=3)
+ax.tick_params(which="both", length=0)
+for side in ax.spines.values():
+    side.set_visible(False)
+for b in bounds:
+    ax.axvline(b - 0.5, color="#333", lw=1.2, ls="--")
+for k, lab in enumerate(["Stage I", "Stage II", "Stage III"]):
+    start = 0 if k == 0 else bounds[k - 1]
+    end = len(sentences) if k == 2 else bounds[k]
+    ax.text((start + end) / 2 - 0.5, -0.75, lab, ha="center", va="bottom", color="#555")
+ax.set_ylim(len(DIMS) - 0.5, -0.9)
+ax.set_title('"Subha", sentence by sentence (darker = more words from that dimension)', pad=8)
+fig.tight_layout()
+fig.savefig(FIG / "sentence_barcode.png", dpi=200)
+plt.close(fig)
+last_nature = max(i for i, v in enumerate(B[1]) if v > 0) + 1
+print(f"Last sentence with a nature word: {last_nature} of {len(sentences)}")

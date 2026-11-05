@@ -14,6 +14,8 @@ The synthetic-reading method of Ghosh, Shanmugapriya T and Mandal (*IJHAC* 20.2,
 
 ![Theme trace](figures/theme_trace.png)
 
+![Sentence barcode](figures/sentence_barcode.png)
+
 ---
 
 **Khushi Jha** · MA Digital Humanities · Department of Humanities and Social Sciences, IIT (ISM) Dhanbad · Monsoon Semester 2026
