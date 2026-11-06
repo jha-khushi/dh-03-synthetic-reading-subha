@@ -109,7 +109,7 @@ ax.legend([f"{label} ({n})" for (_, label, _), n in zip(DIMS, totals)],
           loc="upper center", bbox_to_anchor=(0.5, 0.02), ncol=2, frameon=False)
 ax.set_title(f'"Subha": {sum(totals)} extracted expressions by dimension')
 fig.tight_layout()
-fig.savefig(FIG / "dimension_share.png", dpi=200)
+fig.savefig(FIG / "dimension_share.png", dpi=200, bbox_inches="tight")
 plt.close(fig)
 
 # ---- Figure 4: sentence-by-sentence "barcode" heatmap ------------------------
