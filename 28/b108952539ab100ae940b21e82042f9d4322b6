@@ -1,0 +1,19 @@
+visualise.py
+  s_5a02c502e9a5a2::t_b8a7e174cbfc94 112
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "28b108952539ab100ae940b21e82042f9d4322b6",
+  "prompts": {},
+  "sessions": {
+    "s_5a02c502e9a5a2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e2d63629-4982-4c11-a56f-53eb75dee1e6",
+        "model": "unknown"
+      },
+      "human_author": "jha-khushi <224996314+jha-khushi@users.noreply.github.com>"
+    }
+  }
+}
